@@ -6,7 +6,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import com.statefarm.chatbot.common.pojo.ServerStatusResponsePojo;
-import com.statefarm.chatbot.common.pojo.TransulationApiRes;
 import com.statefarm.chatbot.service.TransulationService;
 import com.statefarm.chatbot.transulation.TransulationRequest;
 import com.statefarm.chatbot.transulation.TransulationRestMapping;
