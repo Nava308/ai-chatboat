@@ -11,14 +11,24 @@ public class TransulationRes implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	public String translatedText;
+	public String detectedSourceLanguage;
 
 	public TransulationRes() {
 		super();
 	}
-
-	public TransulationRes(String translatedText) {
+	
+	public TransulationRes(String translatedText, String detectedSourceLanguage) {
 		super();
 		this.translatedText = translatedText;
+		this.detectedSourceLanguage = detectedSourceLanguage;
+	}
+
+	public String getDetectedSourceLanguage() {
+		return detectedSourceLanguage;
+	}
+
+	public void setDetectedSourceLanguage(String detectedSourceLanguage) {
+		this.detectedSourceLanguage = detectedSourceLanguage;
 	}
 
 	public String getTranslatedText() {
@@ -31,7 +41,8 @@ public class TransulationRes implements Serializable {
 
 	@Override
 	public String toString() {
-		return "TransulationRes [translatedText=" + translatedText + "]";
+		return "TransulationRes [translatedText=" + translatedText + ", detectedSourceLanguage="
+				+ detectedSourceLanguage + "]";
 	}
 
 }
